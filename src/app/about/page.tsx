@@ -49,7 +49,7 @@ export default function About() {
       <section className="bg-primary text-white py-28 text-center relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <Image
-            src="https://i.postimg.cc/vHL75kH0/moon.jpg"
+            src="https://i.ibb.co.com/dw7ShQgd/imagr.jpg"
             alt="Hero Background"
             fill
             priority
@@ -216,7 +216,7 @@ export default function About() {
           </motion.div>
           <div className="flex-1 relative w-full aspect-[4/3] h-[450px]">
             <Image
-              src="https://i.postimg.cc/Qx64WxHX/antique-ancient-building-culture-tiksey-view.jpg"
+              src="https://i.ibb.co.com/dw7ShQgd/imagr.jpg"
               alt="History Image"
               fill
               className="rounded-[3rem] shadow-2xl object-cover"
