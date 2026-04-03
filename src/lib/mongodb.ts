@@ -1,9 +1,11 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-const MONGODB_URI = process.env.MONGODB_URI || "";
+const MONGODB_URI = process.env.MONGODB_URL || "";
 
 if (!MONGODB_URI) {
-  throw new Error("Please define the MONGODB_URI environment variable in .env.local");
+  throw new Error(
+    "Please define the MONGODB_URI environment variable in .env.local",
+  );
 }
 
 export const dbConnect = async () => {
@@ -12,14 +14,13 @@ export const dbConnect = async () => {
     if (mongoose.connection.readyState >= 1) return;
 
     await mongoose.connect(MONGODB_URI, {
-      bufferCommands: false, // এটি টাইম-আউট এরর কমাতে সাহায্য করবে
-      dbName: 'Madsaha-Database'
+      bufferCommands: false,
+      dbName: "Madsaha-Database",
     });
-    
+
     console.log("MongoDB Connected ✅");
   } catch (error) {
     console.error("MongoDB Connection Error ❌", error);
-    // এরর আসলে প্রসেস থামিয়ে দাও যেন বুঝা যায় কী সমস্যা
-    throw error; 
+    throw error;
   }
 };

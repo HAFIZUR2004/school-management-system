@@ -62,7 +62,7 @@ export const translations = {
     },
     footer: {
       aboutTitle: "মাদ্রাসা ওয়েবসাইট",
-      aboutDesc: "একটি আধুনিক মাদ্রাসার পূর্ণাঙ্গ ওয়েবসাইট।",
+      aboutDesc: "একটি আধুনিক শিক্ষার পূর্ণাঙ্গ ওয়েবসাইট।",
       quickLinks: "দ্রুত লিঙ্ক",
       importantLinks: "প্রয়োজনীয় লিঙ্ক",
       contact: "যোগাযোগ",
@@ -387,7 +387,7 @@ export const translations = {
     },
     footer: {
       aboutTitle: "Madrasa Website",
-      aboutDesc: "A complete website for a modern madrasa.",
+      aboutDesc: "A complete website for a modern education.",
       quickLinks: "Quick Links",
       importantLinks: "Important Links",
       contact: "Contact",
